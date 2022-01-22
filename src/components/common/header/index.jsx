@@ -5,11 +5,13 @@ import MainNav from "./MainNav";
 
 export default function Example() {
   return (
-    <Disclosure as="header" className="bg-white shadow-xl">
+    <Disclosure as="header" className="bg-gray-100 shadow-xl">
       {({ open }) => (
         <>
-          <div className="min-w-min mx-auto px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-0">
-            <TopBar />
+          <div className="min-w-min mx-auto px-2 sm:px-4 xl:divide-y xl:divide-gray-200 xl:px-0">
+            <div className="hidden xl:block">
+              <TopBar />
+            </div>
             <MainNav />
           </div>
         </>
