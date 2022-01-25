@@ -7,7 +7,7 @@ const Cart = () => {
       style={{
         backgroundImage: `url("img-slider-01.jpeg")`,
       }}
-      className="w-96 h-96  shadow-xl relative"
+      className="w-16 h-56 md:w-96 md:h-96  shadow-xl relative"
     >
       <div className="relative w-full h-full">
         <div

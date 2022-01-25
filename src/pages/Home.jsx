@@ -1,4 +1,5 @@
 import React from "react";
+import SideBarContant from "../components/common/header/SideBarContant";
 import Cases from "../components/Home/Cases";
 import ContactCards from "../components/Home/ContactCards";
 import Experience from "../components/Home/Experience";
@@ -17,6 +18,7 @@ const Home = () => {
       <Names />
       <Cases />
       <MapContainer />
+      <SideBarContant />
     </div>
   );
 };

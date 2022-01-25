@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-import {
-  FaAddressBook,
-  FaFacebookMessenger,
-  FaPeopleCarry,
-} from "react-icons/fa";
+import { Map, GoogleApiWrapper } from "google-maps-react";
+import { FaFacebookMessenger, FaPeopleCarry } from "react-icons/fa";
 
 class MapContainer extends Component {
   render() {

@@ -45,6 +45,8 @@ const FullCarousel = () => {
         stopOnHover={false}
         showArrows={false}
         showStatus={false}
+        swipeable={false}
+        showIndicators={false}
         interval={5000}
         axis={"horizontal"}
       >

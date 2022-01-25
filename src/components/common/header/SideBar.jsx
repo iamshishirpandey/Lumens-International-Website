@@ -13,35 +13,7 @@ import {
 import { FiChevronDown } from "react-icons/fi";
 import TopBar from "./TopBar";
 import { FaPhone, FaSearch, FaShoppingBag } from "react-icons/fa";
-
-const navigation = [
-  {
-    id: 1,
-    name: "Dashboard",
-    href: "#",
-    icon: HomeIcon,
-    current: true,
-    option: true,
-    links: [
-      { name: "Dashboard", href: "#" },
-      { name: "Dashboard", href: "#" },
-      { name: "Dashboard", href: "#" },
-      { name: "Dashboard", href: "#" },
-      { name: "Dashboard", href: "#" },
-      { name: "Dashboard", href: "#" },
-      { name: "Dashboard", href: "#" },
-    ],
-  },
-  { id: 2, name: "Team", href: "#", icon: UsersIcon, current: false },
-  { id: 3, name: "Projects", href: "#", icon: FolderIcon, current: false },
-  { id: 4, name: "Calendar", href: "#", icon: CalendarIcon, current: false },
-  { id: 5, name: "Documents", href: "#", icon: InboxIcon, current: false },
-  { id: 6, name: "Reports", href: "#", icon: ChartBarIcon, current: false },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import SideBarContant from "./SideBarContant";
 
 const SideBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -110,48 +82,7 @@ const SideBar = () => {
                     </div>
                     <nav className="space-y-1 w-full">
                       <ul className="text-center p-5 text-lg">
-                        {navigation.map((item) => (
-                          <>
-                            <li
-                              key={item.name}
-                              className={classNames(
-                                item.current
-                                  ? "text-white bg-red-500"
-                                  : "text-gray-900",
-                                item.id === navigation.length ? "" : "border-b",
-                                "w-full p-3 flex justify-between items-center"
-                              )}
-                            >
-                              <a
-                                href={item.href}
-                                className="flex-1 w-full"
-                                aria-current={item.current ? "page" : undefined}
-                              >
-                                {item.name}
-                              </a>
-                              <button type="button" onClick={() => {}}>
-                                <FiChevronDown className="w-5 h-5" />
-                              </button>
-                            </li>
-                            {item.current && item.option && (
-                              <ul>
-                                {item.links.map((ite) => (
-                                  <li
-                                    key={ite.name}
-                                    className={classNames(
-                                      item.id === navigation.length
-                                        ? ""
-                                        : "border-b",
-                                      "w-full p-3 flex justify-center items-center"
-                                    )}
-                                  >
-                                    <a href="/">{ite.name}</a>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </>
-                        ))}
+                        <SideBarContant />
                       </ul>
                     </nav>
                     <ul className="flex items-center justify-center space-x-5">
