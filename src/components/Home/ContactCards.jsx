@@ -6,31 +6,34 @@ const ContactCards = () => {
   const people = [
     {
       name: "Plan, then Do",
-      title: "Our Services",
-      role: "Avantage Group is all about strategy, were here to inform which tactics need funding and which are drains on resources.",
-      button: "Avantage Service",
+      title: "Staffing & Search",
+      role: "Access to the nation largest, Most diverse network of healthcare professionals.",
       image: `url("bgn-boxes-01.jpeg")`,
     },
     {
       name: "SMALL TACTICS",
-      title: "Our Approach",
-      role: "Business we operate in is like an intricate game of chess, where every move counts and you keep score with money.",
-      button: "More about Avantage",
+      title: "Technology",
+      role: "Comprehensive stack of tools from analytics, scheduling and vendor management to leading video remote interpretation.",
       image: `url("bgn-boxes-02.jpeg")`,
     },
     {
       name: "PROOF, NOT PROMISES",
-      title: "Avantage Results",
-      role: "Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.",
-      button: "Explor Our Solution",
+      title: "Talent planning & acquisition",
+      role: "Strategic consultation to optimize workforce and technology to improve patient outcomes",
       image: `url("bgn-boxes-03.jpeg")`,
+    },
+    {
+      name: "PROOF, NOT PROMISES",
+      title: "managed Services Programs",
+      role: "One program to handle all talent management need from acquisition to development.",
+      image: `url("bgn-boxes-02.jpeg")`,
     },
   ];
   return (
     <div className="flex items-center ">
       <ul
         role="list"
-        className="grid grid-cols-1 gap-6 md:grid-cols-3 w-full px-5 xl:px-28"
+        className="grid grid-cols-1 gap-6 md:grid-cols-4 w-full px-5 xl:px-28"
       >
         {people.map((person, index) => (
           <ScrollAnimation
@@ -44,19 +47,19 @@ const ContactCards = () => {
               style={{
                 backgroundImage: `${person.image}`,
               }}
-              className="col-span-1 z-2 mb-16 -mt-10 pt-24 flex flex-col text-center bg-cover bg-top md:bg-center rounded-sm drop-shadow-2xl divide-y divide-gray-200"
+              className="z-2 mb-16 -mt-10 pt-24 flex flex-col bg-cover bg-top md:bg-center rounded-sm drop-shadow-2xl divide-y divide-gray-200"
             >
               <div className="flex-1 items-start flex flex-col  p-8 space-y-3">
                 <div className="flex items-center space-x-2">
                   <spam className="w-10 h-0.5 bg-red-500" />
-                  <spam className="uppercase">{person.name}</spam>
+                  <spam className="uppercase text-left">{person.name}</spam>
                 </div>
-                <div className="mt-1 text-3xl font-bold text-sky-900   ">
+                <div className="mt-1 text-2xl font-bold text-sky-900 capitalize">
                   {person.title}
                 </div>
                 <div className="text-sm text-left pb-4">{person.role}</div>
                 <button className="px-5 py-3 bg-red-500 text-white rounded-sm">
-                  {person.button}
+                  Learn more
                 </button>
               </div>
             </li>

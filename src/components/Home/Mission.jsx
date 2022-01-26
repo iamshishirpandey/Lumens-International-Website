@@ -1,25 +1,8 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import { GiSandsOfTime } from "react-icons/gi";
+import YoutubeEmbed from "./YoutubeEmbed";
 
-const Experience = () => {
-  const contant = [
-    {
-      name: "Consistency",
-      icon: GiSandsOfTime,
-      text: "Podcasting operational change management inside of workflow.",
-    },
-    {
-      name: "Consistency",
-      icon: GiSandsOfTime,
-      text: "Podcasting operational change management inside of workflow.",
-    },
-    {
-      name: "Consistency",
-      icon: GiSandsOfTime,
-      text: "Podcasting operational change management inside of workflow.",
-    },
-  ];
+const Mission = () => {
   return (
     <div
       className="grid grid-cols-6 lg:grid-cols-12 gap-10 px-5 lg:pr-28 bg-cover bg-center"
@@ -27,18 +10,27 @@ const Experience = () => {
         backgroundImage: `url("bgn-industries.png")`,
       }}
     >
-      <div className="col-span-6">
+      <div className="col-span-6 py-20">
         <ScrollAnimation
           animateOnce={true}
           animateIn="fadeInLeft"
           duration={1}
-          delay={300}
+          delay={400}
         >
-          <img
+          {/* <img
             src="img-experience.png"
             alt="bgn-boxes-03.jpeg"
             className="w-full h-full"
-          />
+          /> */}
+          <YoutubeEmbed embedId="rokGy0huYEA" />
+
+          {/* <video
+            controls
+            autostart
+            autoPlay
+            src={`url("https://www.youtube.com/watch?v=VJ1iZGqynKU&ab_channel=AMNHealthcare")`}
+            type={this.props.type}
+          /> */}
         </ScrollAnimation>
       </div>
       <div className="col-span-6 md:py-16 px-5 md:px-0">
@@ -55,9 +47,10 @@ const Experience = () => {
               GROWING WITH OUR CLIENTS
             </spam>
           </div>
-          <div className=" text-3xl sm:text-6xl font-bold ">
-            <p className="text-sky-900 text-left">30 Years of</p>
-            <p className="text-red-600 text-left ">Experience</p>
+          <div className=" text-2xl sm:text-6xl font-bold ">
+            <p className="text-sky-900 text-left">
+              Talent Strategies that Deliver on the Mission of Healthcare
+            </p>
           </div>
           <div>
             <h2>Empowering the Future of Care</h2>
@@ -66,7 +59,7 @@ const Experience = () => {
             innovative ways.
           </div>
           <ul className="text-left text-sm lg:text-lg sm:pb-10">
-            <li>
+            <li className="flex">
               <b>Shared Goals:</b> Achieve your goals with people who know you
               and take on your priorities{" "}
             </li>
@@ -79,29 +72,10 @@ const Experience = () => {
               effective ways with the latest technology{" "}
             </li>
           </ul>
-          <div className="grid grid-cols-4 md:grid-cols-12 text-center gap-5">
-            {contant.map((item, index) => (
-              <ScrollAnimation
-                animateOnce={true}
-                animateIn="fadeInUp"
-                duration={1}
-                delay={index * 300}
-                className="col-span-4"
-              >
-                <div className="justify-center flex items-center flex-col space-y-2">
-                  <div className="border-8 border-red-500 rounded-full p-8">
-                    <item.icon className="text-sky-900 w-16 h-16 " />
-                  </div>
-                  <p className="font-bold text-3xl text-sky-900">{item.name}</p>
-                  <p className="">{item.text}</p>
-                </div>
-              </ScrollAnimation>
-            ))}
-          </div>
         </ScrollAnimation>
       </div>
     </div>
   );
 };
 
-export default Experience;
+export default Mission;

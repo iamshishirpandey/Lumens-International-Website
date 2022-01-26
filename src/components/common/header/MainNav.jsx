@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaPhone, FaSearch, FaShoppingBag } from "react-icons/fa";
+import Nav from "./Nav";
 import SideBar from "./SideBar";
 
 const MainNav = () => {
@@ -7,8 +8,7 @@ const MainNav = () => {
   const navigation = [
     { name: "Home", href: "#", current: true },
     { name: "About Us", href: "#", current: false },
-    { name: "Service", href: "#", current: false },
-    { name: "Contact", href: "#", current: false },
+    { name: "Contact us", href: "#", current: false },
     { name: "Blog", href: "#", current: false },
   ];
 
@@ -44,23 +44,7 @@ const MainNav = () => {
         </h1>
 
         <div className="hidden xl:flex justify-between space-x-16 items-center">
-          <div className="flex items-center space-x-10">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="inline-flex  items-center font-semibold"
-                aria-current={item.current ? "page" : undefined}
-              >
-                <spam
-                  className={classNames(
-                    item.current ? "w-2.5 h-0.5 bg-red-500 mr-1" : "hidden"
-                  )}
-                ></spam>
-                {item.name}
-              </a>
-            ))}
-          </div>
+          <Nav />
           <div>
             <ul className="flex items-center space-x-5">
               <li>

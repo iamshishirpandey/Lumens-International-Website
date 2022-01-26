@@ -1,19 +1,10 @@
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import {
-  CalendarIcon,
-  ChartBarIcon,
-  FolderIcon,
-  HomeIcon,
-  InboxIcon,
-  MenuIcon,
-  UsersIcon,
-  XIcon,
-} from "@heroicons/react/outline";
-import { FiChevronDown } from "react-icons/fi";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import TopBar from "./TopBar";
 import { FaPhone, FaSearch, FaShoppingBag } from "react-icons/fa";
 import SideBarContant from "./SideBarContant";
+import Nav from "./Nav";
 
 const SideBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -82,7 +73,7 @@ const SideBar = () => {
                     </div>
                     <nav className="space-y-1 w-full">
                       <ul className="text-center p-5 text-lg">
-                        <SideBarContant />
+                        <Nav />
                       </ul>
                     </nav>
                     <ul className="flex items-center justify-center space-x-5">
