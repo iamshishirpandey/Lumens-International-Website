@@ -1,4 +1,6 @@
+import { Switch } from "@headlessui/react";
 import React from "react";
+
 import Cases from "../components/Home/Cases";
 import ContactCards from "../components/Home/ContactCards";
 import Experience from "../components/Home/Experience";
@@ -8,7 +10,7 @@ import MapContainer from "../components/Home/MapContainer";
 import Mission from "../components/Home/Mission";
 import Names from "../components/Home/Names";
 
-const Home = () => {
+const Index = () => {
   return (
     <div>
       <FullCarousel />
@@ -23,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Index;

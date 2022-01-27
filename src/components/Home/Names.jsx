@@ -40,10 +40,10 @@ const Names = () => {
       <div className="grid grid-cols-12">
         <div className="space-y-4 text-white col-span-12 md:col-span-9 lg:col-span-6">
           <div className="flex items-center space-x-3">
-            <spam className="w-10 sm:w-16 h-0.5 bg-red-500" />
-            <spam className="uppercase text-sm text-left sm:text-lg">
+            <span className="w-10 sm:w-16 h-0.5 bg-red-500" />
+            <span className="uppercase text-sm text-left sm:text-lg">
               WHERE CAN WE HELP YOU
-            </spam>
+            </span>
           </div>
           <div className=" text-3xl sm:text-6xl font-bold ">
             <p className="text-white text-left">Consultancy</p>
@@ -76,13 +76,13 @@ const Names = () => {
                 {item.title}
               </h2>
               <p className=" text-sm lg:text-base">{item.description}</p>
-              <spam className="flex items-center">
+              <span className="flex items-center">
                 <FaStar className="w-5 h-5 text-red-500" />
                 <FaStar className="w-5 h-5 text-red-500" />
                 <FaStar className="w-5 h-5 text-red-500" />
                 <FaStar className="w-5 h-5 text-red-500" />
                 <FaStar className="w-5 h-5 text-red-500" />
-              </spam>
+              </span>
               <p className="font-semibold">{item.name}</p>
               <p className="font-bold text-2xl">{item.post}</p>
             </div>

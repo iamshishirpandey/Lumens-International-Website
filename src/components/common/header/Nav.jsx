@@ -1,30 +1,32 @@
+import { Link } from "react-router-dom";
+
 const Nav = () => {
   const navigation = [
-    { name: "Home", href: "#", current: true },
-    { name: "About Us", href: "#", current: false },
-    { name: "Contact us", href: "#", current: false },
-    { name: "Blog", href: "#", current: false },
+    { name: "Home", href: "/", current: true },
+    { name: "About", href: "/about", current: false },
+    { name: "Contact", href: "/contact", current: false },
+    { name: "blog", href: "/blog", current: false },
   ];
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
   return (
     <div>
-      <div className="flex items-center space-x-10">
+      <div className="flex flex-col lg:flex-row justify-center items-center space-y-5 lg:space-y-0 lg:space-x-10">
         {navigation.map((item) => (
-          <a
+          <Link
             key={item.name}
-            href={item.href}
-            className="inline-flex  items-center font-semibold"
+            to={item.href}
+            className="inline-flex  items-center font-semibold capitalize text-xl lg:text-base"
             aria-current={item.current ? "page" : undefined}
           >
-            <spam
+            <span
               className={classNames(
                 item.current ? "w-2.5 h-0.5 bg-red-500 mr-1" : "hidden"
               )}
-            ></spam>
+            ></span>
             {item.name}
-          </a>
+          </Link>
         ))}
       </div>
     </div>

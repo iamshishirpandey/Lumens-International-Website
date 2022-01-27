@@ -28,8 +28,8 @@ class MapContainer extends Component {
           <div className="rounded-sm p-5 grid grid-cols-9 gap-5 bg-white">
             <div className="col-span-3">
               <div className="flex items-center space-x-3">
-                <spam className="w-5 h-0.5 bg-red-500" />
-                <spam className="uppercase text-sm">OUR OFFICES</spam>
+                <span className="w-5 h-0.5 bg-red-500" />
+                <span className="uppercase text-sm">OUR OFFICES</span>
               </div>
               <div className=" text-xl sm:text-3xl font-bold ">
                 <p className="text-sky-900 text-left">Get in Touch</p>

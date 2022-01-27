@@ -90,7 +90,7 @@ const SideBar = () => {
                       <li>
                         <button className="text-white text-sm font-semibold py-3 px-5  flex items-center space-x-3  bg-red-500 hover:-translate-y-1.5 hover:shadow-sm hover:shadow-gray-600 hover:transition-all">
                           <FaPhone className="rotate-90 " />
-                          <spam>9898989898</spam>
+                          <span>9898989898</span>
                         </button>
                       </li>
                     </ul>

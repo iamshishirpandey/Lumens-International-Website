@@ -6,34 +6,34 @@ export const FindUs = () => {
     <div className="space-y-5">
       <div>
         <div className="flex items-center space-x-2">
-          <spam className="w-5 h-0.5 bg-red-500" />
-          <spam className="font-semibold capitalize">Our Locations</spam>
+          <span className="w-5 h-0.5 bg-red-500" />
+          <span className="font-semibold capitalize">Our Locations</span>
         </div>
-        <spam className="text-red-500 text-xl font-bold">
+        <span className="text-red-500 text-xl font-bold">
           Where to find us?
-        </spam>
+        </span>
       </div>
       <div className="grid sm:grid-cols-2 space-y-5 h-auto">
         <img src="lumensWorld.png" alt="LumensWorld" className="h-36" />
         <div className="sm:flex flex-col justify-center items-center">
           <ul>
             <li>
-              <spam className="flex items-center  space-x-2 ">
+              <span className="flex items-center  space-x-2 ">
                 <MdLocationOn className="h-6 text-red-500" />
-                <spam>London: 020 7946 0020</spam>
-              </spam>
+                <span>London: 020 7946 0020</span>
+              </span>
             </li>
             <li>
-              <spam className="flex items-center space-x-2 ">
+              <span className="flex items-center space-x-2 ">
                 <MdLocationOn className="h-6 text-red-500" />
-                <spam>Ontario: 613 285 5534</spam>
-              </spam>
+                <span>Ontario: 613 285 5534</span>
+              </span>
             </li>
             <li>
-              <spam className="flex items-center space-x-2 ">
+              <span className="flex items-center space-x-2 ">
                 <MdLocationOn className="h-6 text-red-500" />
-                <spam>Tokyo: 0428 298 114</spam>
-              </spam>
+                <span>Tokyo: 0428 298 114</span>
+              </span>
             </li>
           </ul>
         </div>

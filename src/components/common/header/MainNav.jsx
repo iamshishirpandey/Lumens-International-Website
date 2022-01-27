@@ -6,10 +6,10 @@ import SideBar from "./SideBar";
 const MainNav = () => {
   const [screen, setScreen] = useState(false);
   const navigation = [
-    { name: "Home", href: "#", current: true },
-    { name: "About Us", href: "#", current: false },
-    { name: "Contact us", href: "#", current: false },
-    { name: "Blog", href: "#", current: false },
+    { name: "Home", href: "/", current: true },
+    { name: "About Us", href: "/about", current: false },
+    { name: "Contact us", href: "/contact", current: false },
+    { name: "Blog", href: "/blog", current: false },
   ];
 
   function classNames(...classes) {
@@ -60,7 +60,7 @@ const MainNav = () => {
               <li>
                 <button className="text-white rounded-sm text-sm font-semibold py-3 px-5  flex items-center space-x-3  bg-red-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-500 duration-300">
                   <FaPhone className="rotate-90 " />
-                  <spam>9898989898</spam>
+                  <span>9898989898</span>
                 </button>
               </li>
             </ul>

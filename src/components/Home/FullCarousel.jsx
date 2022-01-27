@@ -50,10 +50,10 @@ const FullCarousel = () => {
             <div className="flex items-center justify-start px-5 xl:px-28 h-full w-full animate__animated animate__fadeInUp">
               <div className="space-y-4 md:space-y-5">
                 <div className="flex items-center space-x-3">
-                  <spam className="w-10 sm:w-16 h-0.5 bg-red-500" />
-                  <spam className="uppercase text-sm text-left sm:text-lg">
+                  <span className="w-10 sm:w-16 h-0.5 bg-red-500" />
+                  <span className="uppercase text-sm text-left sm:text-lg">
                     {item.title}
-                  </spam>
+                  </span>
                 </div>
                 <div className=" text-5xl sm:text-7xl">
                   <p className=" font-bold text-sky-900 text-left">

@@ -51,8 +51,8 @@ const ContactCards = () => {
             >
               <div className="flex-1 items-start flex flex-col  p-8 space-y-3">
                 <div className="flex items-center space-x-2">
-                  <spam className="w-10 h-0.5 bg-red-500" />
-                  <spam className="uppercase text-left">{person.name}</spam>
+                  <span className="w-10 h-0.5 bg-red-500" />
+                  <span className="uppercase text-left">{person.name}</span>
                 </div>
                 <div className="mt-1 text-2xl font-bold text-sky-900 capitalize">
                   {person.title}

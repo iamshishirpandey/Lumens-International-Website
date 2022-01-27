@@ -41,9 +41,9 @@ const TopBar = () => {
       </div>
 
       <div className="xl:relative py-10 xl:px-0 xl:z-10 xl:ml-4 grid grid-cols-1 xl:flex items-center justify-center space-y-5 xl:space-y-0 xl:space-x-5">
-        <spam className="pr-2 text-white w-full text-center">
+        <span className="pr-2 text-white w-full text-center">
           Visit our social pages
-        </spam>
+        </span>
         <ul className="text-sm flex items-center justify-center xl:justify-items-end space-x-2">
           <li>
             <a href="/">

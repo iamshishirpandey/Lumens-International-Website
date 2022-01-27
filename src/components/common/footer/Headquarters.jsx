@@ -8,33 +8,33 @@ const Headquarters = () => {
     <div className="space-y-5">
       <div>
         <div className="flex items-center space-x-2">
-          <spam className="w-5 h-0.5 bg-red-500" />
-          <spam className="font-semibold capitalize">Lumens</spam>
+          <span className="w-5 h-0.5 bg-red-500" />
+          <span className="font-semibold capitalize">Lumens</span>
         </div>
-        <spam className="text-red-500 text-xl font-bold">Headquarters</spam>
+        <span className="text-red-500 text-xl font-bold">Headquarters</span>
       </div>
-      <spam className="text-sm">
+      <span className="text-sm">
         Organically grow the holistic world view of disruptive innovation via
         empowerment.
-      </spam>
+      </span>
       <ul className="space-y-1">
         <li>
-          <spam className="flex items-center space-x-2 hover:text-red-500">
+          <span className="flex items-center space-x-2 hover:text-red-500">
             <FaPhone className="w-5" />
-            <spam>9898989898</spam>
-          </spam>
+            <span>9898989898</span>
+          </span>
         </li>
         <li>
-          <spam className="flex items-center space-x-2 hover:text-red-500">
+          <span className="flex items-center space-x-2 hover:text-red-500">
             <HiMail className="w-5" />
-            <spam>info@lumens.com</spam>
-          </spam>
+            <span>info@lumens.com</span>
+          </span>
         </li>
         <li>
-          <spam className="flex items-center space-x-2 hover:text-red-500">
+          <span className="flex items-center space-x-2 hover:text-red-500">
             <GiEarthAmerica className="w-5" />
-            <spam>lumens.com.np</spam>
-          </spam>
+            <span>lumens.com.np</span>
+          </span>
         </li>
       </ul>
     </div>

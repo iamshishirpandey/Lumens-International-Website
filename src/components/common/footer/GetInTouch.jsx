@@ -11,17 +11,17 @@ const GetInTouch = () => {
     <div className="space-y-5">
       <div>
         <div className="flex items-center space-x-2">
-          <spam className="w-5 h-0.5 bg-red-500" />
-          <spam className="font-semibold capitalize">Get In Touch</spam>
+          <span className="w-5 h-0.5 bg-red-500" />
+          <span className="font-semibold capitalize">Get In Touch</span>
         </div>
-        <spam className="text-red-500 text-xl font-bold">
+        <span className="text-red-500 text-xl font-bold">
           Avantage Social links
-        </spam>
+        </span>
       </div>
-      <spam className="text-sm">
+      <span className="text-sm">
         Taking seamless key performance indicators offline to maximise the long
         tail.
-      </spam>
+      </span>
       <ul className="flex items-center flex-wrap">
         <li className="rounded-full bg-red border-2 text-white  m-1 border-red-500 p-3 bg-red-500 hover:bg-white hover:ease-linear hover:transition-all hover:duration-1000  hover:text-red-500 ">
           <a href="/">

@@ -7,14 +7,14 @@ const Cases = () => {
       <div className="grid grid-cols-12">
         <div className="space-y-4 col-span-12 lg:col-span-8">
           <div className="flex items-center space-x-3">
-            <spam className="w-10 sm:w-16 h-0.5 bg-red-500" />
-            <spam className="uppercase text-sm text-left sm:text-lg">
+            <span className="w-10 sm:w-16 h-0.5 bg-red-500" />
+            <span className="uppercase text-sm text-left sm:text-lg">
               SEE WHAT WE DO
-            </spam>
+            </span>
           </div>
           <div className="text-3xl sm:text-6xl font-bold space-x-3">
-            <spam className="text-sky-900 text-left">Consultancy</spam>
-            <spam className="text-red-600 text-left ">Cases</spam>
+            <span className="text-sky-900 text-left">Consultancy</span>
+            <span className="text-red-600 text-left ">Cases</span>
           </div>
         </div>
       </div>
