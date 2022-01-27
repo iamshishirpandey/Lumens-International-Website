@@ -3,7 +3,6 @@ import { Dialog, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import TopBar from "./TopBar";
 import { FaPhone, FaSearch, FaShoppingBag } from "react-icons/fa";
-import SideBarContant from "./SideBarContant";
 import Nav from "./Nav";
 
 const SideBar = () => {

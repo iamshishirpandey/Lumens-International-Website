@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import { FaCheckCircle } from "react-icons/fa";
 import YoutubeEmbed from "./YoutubeEmbed";
 
 const Mission = () => {
@@ -20,13 +21,13 @@ const Mission = () => {
           <YoutubeEmbed embedId="rokGy0huYEA" />
         </ScrollAnimation>
       </div>
-      <div className="col-span-6 lg:py-16 px-5 md:px-0">
+      <div className="col-span-6 lg:py-24 px-5 md:px-0">
         <ScrollAnimation
           animateOnce={true}
           animateIn="fadeInRight"
           duration={1}
           delay={300}
-          className="space-y-8"
+          className="space-y-5"
         >
           <div className="flex items-center space-x-3">
             <span className="w-10 sm:w-16 h-0.5 bg-red-500" />
@@ -48,17 +49,27 @@ const Mission = () => {
             innovative ways.
           </div>
           <ul className="text-left text-sm lg:text-lg sm:pb-10">
-            <li>
-              <b>Shared Goals:</b> Achieve your goals with people who know you
-              and take on your priorities{" "}
+            <li className="flex space-x-2 items-start">
+              <FaCheckCircle className="w-5 text-sky-900 mt-1" />
+              <span>
+                <b className="text-sky-900">Shared Goals:</b> Achieve your goals
+                with people who know you and take on your priorities.{" "}
+              </span>
             </li>
-            <li>
-              <b>Precise Solutions:</b> Apply the right solution, at the right
-              time through precision and scale{" "}
+            <li className="flex space-x-2 items-start">
+              <FaCheckCircle className="w-5 text-sky-900 mt-1" />
+              <span>
+                <b className="text-sky-900">Innovative Technology:</b> Get
+                things done in new and more effective ways with the latest
+                technology.{" "}
+              </span>
             </li>
-            <li>
-              <b>Innovative Technology:</b> Get things done in new and more
-              effective ways with the latest technology{" "}
+            <li className="flex space-x-2 items-start">
+              <FaCheckCircle className="w-5 text-sky-900 mt-1" />
+              <span>
+                <b className="text-sky-900">Precise Solutions:</b> Apply the
+                right solution, at the right time through precision and scale.{" "}
+              </span>
             </li>
           </ul>
         </ScrollAnimation>

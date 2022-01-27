@@ -49,13 +49,8 @@ const MainNav = () => {
             <ul className="flex items-center space-x-5">
               <li>
                 <button>
-                  <FaSearch className="h-10 pt-1" />
+                  <FaSearch className="h-16 pt-1" />
                 </button>
-              </li>
-              <li>
-                <a href="/">
-                  <FaShoppingBag className="h-10" />
-                </a>
               </li>
               <li>
                 <button className="text-white rounded-sm text-sm font-semibold py-3 px-5  flex items-center space-x-3  bg-red-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-500 duration-300">

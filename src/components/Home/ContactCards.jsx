@@ -17,23 +17,23 @@ const ContactCards = () => {
       image: `url("bgn-boxes-02.jpeg")`,
     },
     {
-      name: "PROOF, NOT PROMISES",
+      name: "PROOF,PROMISES",
       title: "Talent planning & acquisition",
       role: "Strategic consultation to optimize workforce and technology to improve patient outcomes",
       image: `url("bgn-boxes-03.jpeg")`,
     },
     {
-      name: "PROOF, NOT PROMISES",
+      name: "PROOF,ROMISES",
       title: "managed Services Programs",
       role: "One program to handle all talent management need from acquisition to development.",
       image: `url("bgn-boxes-02.jpeg")`,
     },
   ];
   return (
-    <div className="flex items-center ">
+    <div className="flex items-center">
       <ul
         role="list"
-        className="grid grid-cols-1 gap-6 md:grid-cols-4 w-full px-5 xl:px-28"
+        className="grid grid-cols-1 gap-6 md:grid-cols-2 w-full px-5 xl:px-28"
       >
         {people.map((person, index) => (
           <ScrollAnimation
@@ -47,7 +47,7 @@ const ContactCards = () => {
               style={{
                 backgroundImage: `${person.image}`,
               }}
-              className="z-2 mb-16 -mt-10 pt-24 flex flex-col bg-cover bg-top md:bg-center rounded-sm drop-shadow-2xl divide-y divide-gray-200"
+              className="z-2 h-96 mb-16 -mt-10 pt-24 flex flex-col bg-cover bg-top rounded-sm drop-shadow-2xl divide-y divide-gray-200"
             >
               <div className="flex-1 items-start flex flex-col  p-8 space-y-3">
                 <div className="flex items-center space-x-2">
