@@ -93,7 +93,7 @@ const Contact = () => {
               <input
                 type="email"
                 className="p-3 w-full border-2 border-gray-300 rounded"
-                placeholder="Enter Full Name"
+                placeholder="Enter email address"
               />
             </div>
             <div>
@@ -103,7 +103,7 @@ const Contact = () => {
               <input
                 type="number"
                 className="p-3 w-full border-2 border-gray-300 rounded"
-                placeholder="Enter Full Name"
+                placeholder="Phone number"
               />
             </div>
             <div>
@@ -113,7 +113,7 @@ const Contact = () => {
               <input
                 type="text"
                 className="p-3 w-full border-2 border-gray-300 rounded"
-                placeholder="Enter Full Name"
+                placeholder="Address"
               />
             </div>
 
