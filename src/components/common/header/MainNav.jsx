@@ -33,14 +33,15 @@ const MainNav = () => {
         <div className="block xl:hidden">
           <SideBar />
         </div>
-
-        <img
-          className={`${
-            screen ? "h-24" : "h-24 lg:h-32"
-          } mainLogo text-sky-900`}
-          src="lumen.png"
-          alt="lumen.png"
-        />
+        <a href="/">
+          <img
+            className={`${
+              screen ? "h-24" : "h-24 lg:h-32"
+            } mainLogo text-sky-900`}
+            src="lumen.png"
+            alt="lumen.png"
+          />
+        </a>
 
         <div className="hidden xl:flex justify-between space-x-16 items-center">
           <Nav />
