@@ -34,14 +34,13 @@ const MainNav = () => {
           <SideBar />
         </div>
 
-        <h1
+        <img
           className={`${
-            screen ? "text-4xl " : "text-4xl"
-          } "alt="mainLogo uppercase font-bold text-sky-900`}
-        >
-          {" "}
-          Lumens
-        </h1>
+            screen ? "h-24" : "h-24 lg:h-32"
+          } mainLogo text-sky-900`}
+          src="lumen.png"
+          alt="lumen.png"
+        />
 
         <div className="hidden xl:flex justify-between space-x-16 items-center">
           <Nav />

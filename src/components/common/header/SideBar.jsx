@@ -62,13 +62,8 @@ const SideBar = () => {
                 </Transition.Child>
                 <div className="flex-shrink-0 flex bg-white">
                   <div className="justify-center w-full flex-shrink-0 space-y-6 group">
-                    <div className="w-full text-center pt-8">
-                      <a
-                        href="/"
-                        className="text-3xl w-full font-bold text-red-600"
-                      >
-                        LUMENS
-                      </a>
+                    <div className="w-full flex justify-center">
+                      <img src="lumen.png" alt="sidebarlogo" className="h-24" />
                     </div>
                     <nav className="space-y-1 w-full">
                       <ul className="text-center p-5 text-lg">
