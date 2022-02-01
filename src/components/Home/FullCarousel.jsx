@@ -67,9 +67,11 @@ const FullCarousel = () => {
                   {item.description}
                 </div>
                 <div className="space-y-2 sm:space-y-0 sm:space-x-3 text-left">
-                  <button className="py-4 px-5  rounded-sm text-white font-semibold bg-red-500">
-                    {item.button1}
-                  </button>
+                  <a href="/contact">
+                    <button className="py-4 px-5  rounded-sm text-white font-semibold bg-red-500">
+                      {item.button1}
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

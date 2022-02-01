@@ -46,22 +46,22 @@ const TopBar = () => {
         </span>
         <ul className="text-sm flex items-center justify-center xl:justify-items-end space-x-2">
           <li>
-            <a href="/">
+            <a href="https://www.facebook.com/">
               <FaFacebookF className="h-5 w-6 xl:w-6 xl:h-4 text-red-500" />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://twitter.com/">
               <FaTwitter className="h-5 w-6 xl:w-6 xl:h-4 text-red-500" />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://www.pinterest.com/">
               <FaPinterestP className="h-5 w-6 xl:w-6 xl:h-4 text-red-500" />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://np.linkedin.com/">
               <FaLinkedinIn className="h-5 w-6 xl:w-6 xl:h-4 text-red-500" />
             </a>
           </li>

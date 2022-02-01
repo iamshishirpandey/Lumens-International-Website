@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const LowerFooter = () => {
+  const [showButton, setShowButton] = useState(false);
+
   const navigation = [
     { name: "Home", href: "/", current: true },
     { name: "About", href: "/about", current: false },
@@ -12,6 +14,21 @@ const LowerFooter = () => {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
   return (
     <div className="flex space-y-8 lg:space-y-0 flex-col lg:flex-row justify-between items-center ">
       <span>
@@ -32,10 +49,12 @@ const LowerFooter = () => {
             </li>
           ))}
         </ul>
-        <button className="flex space-x-1 items-center">
-          <FaArrowUp />
-          <span>Back to Top</span>
-        </button>
+        {showButton && (
+          <button onClick={scrollToTop} className="flex space-x-1 items-center">
+            <FaArrowUp />
+            <span>Back to Top</span>
+          </button>
+        )}
       </div>
     </div>
   );

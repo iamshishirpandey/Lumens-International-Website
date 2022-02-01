@@ -53,10 +53,13 @@ const MainNav = () => {
                 </button>
               </li>
               <li>
-                <button className="text-white rounded-sm text-sm font-semibold py-3 px-5  flex items-center space-x-3  bg-red-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-500 duration-300">
+                <a
+                  href="tel:+9779898989898"
+                  className="text-white rounded-sm text-sm font-semibold py-3 px-5  flex items-center space-x-3  bg-red-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-500 duration-300"
+                >
                   <FaPhone className="rotate-90 " />
                   <span>9898989898</span>
-                </button>
+                </a>
               </li>
             </ul>
           </div>
