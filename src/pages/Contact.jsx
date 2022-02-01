@@ -10,7 +10,7 @@ const Contact = () => {
         }}
         className="w-full bg-blue-50"
       >
-        <div className="flex flex-col p-28 justify-center w-full lg:w-2/4 space-y-5">
+        <div className="flex flex-col p-5 lg:p-28 justify-center w-full lg:w-2/4 space-y-5">
           <div className="flex space-x-2 items-center">
             <span className="w-10 h-0.5 bg-red-500" />
             <span className="text-xl">Home</span>
@@ -23,14 +23,14 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div className="py-16 md:py-24 px-5 xl:px-28 bottom-px">
-        <div className="rounded-sm p-5 grid grid-cols-9 gap-5 bg-white">
-          <div className="col-span-3">
+      <div className="py-10 lg:py-16 md:py-24 xl:px-28 bottom-px">
+        <div className="rounded-sm p-5 grid gri grid-cols-1 md:grid-cols-3 lg:grid-cols-9 gap-5 bg-white">
+          <div className="md:col-span-3">
             <div className="flex items-center space-x-3">
               <span className="w-5 h-0.5 bg-red-500" />
               <span className="uppercase text-sm">CONTACT US WITH EASE</span>
             </div>
-            <div className=" text-xl sm:text-3xl font-bold ">
+            <div className=" text-4xl sm:text-3xl font-bold ">
               <p className="text-red-500 text-left">
                 Get in <span className="text-sky-900"> Touch </span>{" "}
               </p>
@@ -41,23 +41,23 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="flex col-span-2 space-x-2 items-center">
-            <FaFacebookMessenger className="w-20 h-20 text-red-500" />
+          <div className="flex lg:col-span-2 space-x-2 items-center text-sm md:text-base">
+            <FaFacebookMessenger className="w-10 h-10 md:w-20 md:h-20  text-red-500" />
             <div>
               <h6 className=" text-2xl text-sky-900 font-bold">Address</h6>
               <p>Bloomsbury Square, London WC1B 4EA</p>
             </div>
           </div>
-          <div className="flex col-span-2 space-x-2 items-center">
-            <FaPeopleCarry className="w-20 h-20 text-red-500" />
+          <div className="flex lg:col-span-2 space-x-2 items-center">
+            <FaPeopleCarry className="w-10 h-10 md:w-20 md:h-20  text-red-500" />
             <div>
               <h6 className=" text-2xl text-sky-900 font-bold">Call us</h6>
               <p>9898989989</p>
               <p>98989898989</p>
             </div>
           </div>
-          <div className="flex col-span-2 space-x-2 items-center">
-            <FaPeopleCarry className="w-20 h-20 text-red-500" />
+          <div className="flex lg:col-span-2 space-x-2 items-center">
+            <FaPeopleCarry className="w-10 h-10 md:w-20 md:h-20 text-red-500" />
             <div>
               <h6 className=" text-2xl text-sky-900 font-bold">Address</h6>
               <p>Bloomsbury Square, London WC1B 4EA</p>
@@ -65,15 +65,17 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-10 py-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 md:py-16 px-5 md:px-0 ">
         <div
-          style={{ clipPath: "polygon(100% 0, 0 36%, 71% 100%)" }}
-          className="relative"
+          style={{
+            clipPath: "polygon(100% 0, 0 36%, 71% 100%)",
+          }}
+          className="relative hidden md:block"
         >
           <MapContact />
         </div>
 
-        <div className="lg:pr-28 py-10">
+        <div className="lg:pr-28 md:py-10">
           <span className="text-xl">Required fields are marked *</span>
           <form className="w-full space-y-2">
             <div className="text-gray-600">

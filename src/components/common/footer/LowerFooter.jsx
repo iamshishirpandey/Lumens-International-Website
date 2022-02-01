@@ -35,12 +35,13 @@ const LowerFooter = () => {
         copyright by <b>Prabidhilabs</b>.All rights reserved.
       </span>
       <div className="flex justify-between space-x-7">
-        <ul className="flex items-center flex-wrap space-x-5 lg:space-x-3">
+        <ul className="flex items-center flex-wrap lg:space-x-3">
           {navigation.map((item) => (
             <li>
               <Link
                 key={item.name}
                 to={item.href}
+                className="pr-3 uppercase"
                 // className="inline-flex items-center uppercase"
                 // aria-current={item.current ? "page" : undefined}
               >

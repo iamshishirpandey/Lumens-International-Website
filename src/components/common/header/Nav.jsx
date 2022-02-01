@@ -12,7 +12,7 @@ const Nav = () => {
   }
   return (
     <div>
-      <div className="flex flex-col lg:flex-row justify-center items-center space-y-5 lg:space-y-0 lg:space-x-10">
+      <div className="flex flex-col xl:flex-row justify-center items-center space-y-5 lg:space-y-0 lg:space-x-10">
         {navigation.map((item) => (
           <Link
             key={item.name}
