@@ -5,27 +5,27 @@ import ScrollAnimation from "react-animate-on-scroll";
 const ContactCards = () => {
   const people = [
     {
-      name: "Plan, then Do",
+      name: "Plan Before Execution",
       title: "Staffing & Search",
-      role: "Access to the nation largest, Most diverse network of healthcare professionals.",
+      role: "Lumens offers medical staff as per your time requirement. Providing excellent patient care according to your necessity is what we will guide you to. Our staffing services include nurses and physicians for you- permanent, temporary, per day, travel, substitute of another, and more.",
       image: `url("bgn-boxes-01.jpeg")`,
     },
     {
-      name: "SMALL TACTICS",
+      name: "Tech-based Strategies for Efficiency",
       title: "Technology",
-      role: "Comprehensive stack of tools from analytics, scheduling and vendor management to leading video remote interpretation.",
+      role: "Backed up with workforce technology, Lumens brings innovative technology-based solutions to efficiently match the patient’s needs. This streamlines with appropriate staff management and recruitment as well as automating processes to conserve time.",
       image: `url("bgn-boxes-02.jpeg")`,
     },
     {
-      name: "PROOF,PROMISES",
+      name: "Consult and Inquire Optimum Workforce",
       title: "Talent planning & acquisition",
-      role: "Strategic consultation to optimize workforce and technology to improve patient outcomes",
+      role: "We constantly work on planning, acquiring and creating the best Talent Management System. Lumens steadily focuses on reinventing the talent supply chain of patient care. While we manage service programs, we are also on top of our work while we recruit patient care solutions.",
       image: `url("bgn-boxes-03.jpeg")`,
     },
     {
-      name: "PROOF,ROMISES",
+      name: "Execution through Workforce, Workflow and TechnologyS",
       title: "managed Services Programs",
-      role: "One program to handle all talent management need from acquisition to development.",
+      role: "This is where the execution of your workflow happens. You could let us manage the process for you or have control of your staffing. Our program handles the entire process from recruiting the best talent out there to managing the service programs at its best cost.",
       image: `url("bgn-boxes-02.jpeg")`,
     },
   ];
@@ -47,7 +47,7 @@ const ContactCards = () => {
               style={{
                 backgroundImage: `${person.image}`,
               }}
-              className="z-2 h-96 mb-16 -mt-10 pt-24 flex flex-col bg-cover bg-top rounded-sm drop-shadow-2xl divide-y divide-gray-200"
+              className="z-2 h-full mb-16 -mt-10 pt-24 flex flex-col bg-cover bg-top rounded-sm drop-shadow-2xl divide-y divide-gray-200"
             >
               <div className="flex-1 items-start flex flex-col  p-8 space-y-3">
                 <div className="flex items-center space-x-2">
@@ -58,9 +58,6 @@ const ContactCards = () => {
                   {person.title}
                 </div>
                 <div className="text-sm text-left pb-4">{person.role}</div>
-                <button className="px-5 py-3 bg-red-500 text-white rounded-sm">
-                  Learn more
-                </button>
               </div>
             </li>
           </ScrollAnimation>

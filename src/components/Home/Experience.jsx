@@ -22,7 +22,7 @@ const Experience = () => {
   ];
   return (
     <div
-      className="grid grid-cols-6 lg:grid-cols-12 gap-10 px-5 lg:pr-28 bg-cover bg-center"
+      className="grid grid-cols-6 lg:grid-cols-12 gap-10 sm:px-5 lg:pr-28 bg-cover bg-center"
       style={{
         backgroundImage: `url("bgn-industries.png")`,
       }}

@@ -7,10 +7,10 @@ const FullCarousel = () => {
   const contant = [
     {
       title: "CUSTOM, SCALABLE, TECH-ENABLED?",
-      name1: "Innovative Staffing",
-      name2: "Total Talent Solutions",
+      name1: "Reliable Staffing, ",
+      name2: "Healthcareg Workforce Management",
       description:
-        "People are at the heart of everything you do. We help you plan, acquire and onboard talent to provide broad patient care coverage in innovative ways.",
+        "Everything you could possibly need to onboard talent and to cover patient care. Your need for a healthcare professional, or you being one-we are one-stop for it all. Healthcare Total Talent Solutions is who we are.",
       button1: "Get In Touch",
 
       img: `url("img-slider-01.jpeg")`,
@@ -55,7 +55,7 @@ const FullCarousel = () => {
                     {item.title}
                   </span>
                 </div>
-                <div className=" text-5xl sm:text-7xl">
+                <div className=" text-5xl sm:text-6xl">
                   <p className=" font-bold text-sky-900 text-left">
                     {item.name1}
                   </p>

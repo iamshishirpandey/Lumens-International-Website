@@ -104,10 +104,10 @@ const SideBar = () => {
           <div className="sticky top-0 z-10 xl:hidden">
             <button
               type="button"
-              className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-sky-900"
+              className="-ml-2 -mt-0.5 flex items-center justify-center rounded-md text-sky-900"
               onClick={() => setSidebarOpen(true)}
             >
-              <MenuIcon className="h-10 w-10" aria-hidden="true" />
+              <MenuIcon className="h-8 w-8" aria-hidden="true" />
             </button>
           </div>
         </div>

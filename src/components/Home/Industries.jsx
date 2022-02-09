@@ -97,11 +97,11 @@ const Industries = () => {
           </div>
         </ScrollAnimation>
       </div>
-      <div className="flex justify-center items-center">
+      {/* <div className="flex justify-center items-center">
         <button className="p-5  text-white bg-sky-900 font-semibold">
           View all Industrie
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
