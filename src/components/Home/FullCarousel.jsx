@@ -8,7 +8,7 @@ const FullCarousel = () => {
     {
       title: "CUSTOM, SCALABLE, TECH-ENABLED?",
       name1: "Reliable Staffing, ",
-      name2: "Healthcareg Workforce Management",
+      name2: "Healthcare Workforce Management",
       description:
         "Everything you could possibly need to onboard talent and to cover patient care. Your need for a healthcare professional, or you being one-we are one-stop for it all. Healthcare Total Talent Solutions is who we are.",
       button1: "Get In Touch",
@@ -18,7 +18,7 @@ const FullCarousel = () => {
     {
       title: "CUSTOM, SCALABLE, TECH-ENABLED?",
       name1: "Reliable Staffing, ",
-      name2: "Healthcareg Workforce Management",
+      name2: "Healthcare Workforce Management",
       description:
         "Everything you could possibly need to onboard talent and to cover patient care. Your need for a healthcare professional, or you being one-we are one-stop for it all. Healthcare Total Talent Solutions is who we are.",
       button1: "Get In Touch",
