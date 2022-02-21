@@ -5,16 +5,7 @@ import SideBar from "./SideBar";
 
 const MainNav = () => {
   const [screen, setScreen] = useState(false);
-  const navigation = [
-    { name: "Home", href: "/", current: true },
-    { name: "About Us", href: "/about", current: false },
-    { name: "Contact us", href: "/contact", current: false },
-    { name: "Blog", href: "/blog", current: false },
-  ];
 
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 1000) setScreen(true);
@@ -38,8 +29,8 @@ const MainNav = () => {
             className={`${
               screen ? "h-24" : "h-24 lg:h-32"
             } mainLogo text-sky-900`}
-            src="lumen.png"
-            alt="lumen.png"
+            src="lumen1.png"
+            alt="lumen1.png"
           />
         </a>
 
